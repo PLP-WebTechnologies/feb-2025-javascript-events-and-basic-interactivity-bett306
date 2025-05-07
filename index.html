@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Handling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Excentric Productions!</h1>
+  <p>Welcome to Excentric Productions. Where music meets reality</p>
+  <p>Register to become a producer bringing great music to the world</p>
+
+  <!-- Register Button -->
+  <button id="RegBtn">Register!</button>
+
+  <!-- Secret Message Button -->
+  <button id="secretBtn">Double Click Me!</button>
+  <p id="secretMessage" class="hidden"> Thank you for registering. We warmly wecome you to our family!</p>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img id="mainImage" src="img1.jpg" alt="Main Image">
+    <div class="thumbnails">
+      <img src="img1.jpg" alt="Thumb 1" class="thumb">
+      <img src="img2.webp" alt="Thumb 2" class="thumb">
+      <img src="img3.jpeg" alt="Thumb 3" class="thumb">
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab" data-target="content1">Form 1</button>
+    <button class="tab" data-target="content2">Form 2</button>
+    <div id="content1" class="tab-content">This is Form 1</div>
+    <div id="content2" class="tab-content hidden">This is Form 2 </div>
+  </div>
+
+  <!-- Form -->
+  <form id="userForm">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <span id="feedback"></span>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Key Display -->
+  <p>Key Pressed: <span id="keyDisplay">None</span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
